@@ -9,6 +9,23 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>model.settings.SpringJavaConfiguration</param-value>
   </context-param>
+
+  <servlet>
+	<servlet-name>hellotest</servlet-name>
+	<servlet-class>controller.HelloTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>hellotest</servlet-name>
+  	<url-pattern>/controller.hellotest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>hello</servlet-name>
+  	<servlet-class>test.hellos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>hello</servlet-name>
+  	<url-pattern>/hello.view</url-pattern>
+  </servlet-mapping>
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
