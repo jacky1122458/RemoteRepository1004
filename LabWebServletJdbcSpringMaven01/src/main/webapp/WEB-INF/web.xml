@@ -25,10 +25,13 @@
   
   <servlet>
 	<servlet-name>hellotest</servlet-name>
-	<servlet-class>/controller/hellotest</servlet-class>
+	<servlet-class>controller.HelloTest</servlet-class>
   </servlet>
+  
   <servlet-mapping>
   	<servlet-name>hellotest</servlet-name>
-  	<url-pattern>/controller/hellotest</url-pattern>
+  	<url-pattern>/controller.hellotest</url-pattern>
   </servlet-mapping>
+  
+  
 </web-app>
